@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign in</title>
+
+		<link rel="stylesheet" href="popup.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="popup.js"
+		></script>
+	</head>
+	<body>
+		<form method="get" class="container">
+			<div class="title">Sign in</div>
+			<div class="subtitle">Blackbox in your browser</div>
+			<div class="input-holder">
+				<div class="label email-label">Email</div>
+				<input
+					maxlength="100"
+					name="email"
+					type="email"
+					class="input email-input"
+					required
+				/>
+			</div>
+			<div class="input-holder no-marg">
+				<div class="label pass-label">Password</div>
+				<input
+					maxlength="20"
+					name="password"
+					type="password"
+					class="input pass-input"
+					required
+				/>
+			</div>
+			<div class="error">Incorrect password and/or email</div>
+			<div class="btn-holder">
+				<button type="submit" class="btn">Sign in</input>
+			</div>
+			<a href="#" class="forgot">Forgot password? we can help!</a>
+		</form>
+	</body>
+</html>
+
+
+<!-- $(document).on("focus", ".input", function () {
+	$(this).prev().addClass("active")
+})
+$(document).on("blur", ".input", function () {
+	if (!$(this).val()) {
+		$(this).prev().removeClass("active")
+	}
+}) -->

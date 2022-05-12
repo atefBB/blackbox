@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 350px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
+.input-holder {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.no-marg {
+  margin: 0;
+}
+
+.label {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  color: #7b7b7b;
+  font-weight: 300;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+.label.active {
+  bottom: 25px;
+  font-size: 11px;
+}
+
+.input {
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: 0;
+  padding: 5px 15px;
+  width: 100%;
+  padding-left: 0;
+  transition: 0.3s ease all;
+}
+
+.input.error {
+  border-color: tomato;
+}
+
+.input:focus {
+  border-color: #9797ee;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #0061fe;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border: 0;
+  outline: 0;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.error {
+  color: #cd6f6f;
+  font-size: 13px;
+  margin-top: 6px;
+  visibility: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #777;
+  transition: 0.3s ease all;
+}
+
+.forgot:hover {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.checkbox-text {
+  color: #7b7b7b;
+  font-weight: 300;
+  transition: 0.3s ease all;
+}

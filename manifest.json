@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "Blackbox",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "extension@blckbx.ai",
+      "strict_min_version": "42.0"
+    }
+  },
+  "version": "3.0",
+  "description": "Blackbox",
+  "browser_action": {
+    "default_icon": {
+      "19": "/images/icon19.png",
+      "38": "/images/icon38.png"
+    },
+    "default_title": "Blackbox"
+  },
+  "options_page": "/content/options.html",
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "/images/Jcrop.gif",
+    "/images/pixel.png"
+  ],
+  "commands": {
+    "take-screenshot": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "Take Screenshot"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "homepage_url": "https://chrome.google.com/webstore/detail/blackbox/mcgbeeipkmelnpldkobichboakdfaeon",
+  "omnibox": {
+    "keyword": "bx"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "<all_urls>",
+    "tabs",
+    "clipboardWrite"
+  ]
+}
